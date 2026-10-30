@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レシート切り抜き の更新履歴</title>
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --sub: #6e6e73;
+    --line: #d2d2d7;
+    --accent: #0071e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --sub: #a1a1a6;
+      --line: #38383a;
+      --accent: #0a84ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  .back { color: var(--accent); text-decoration: none; font-size: 0.95rem; }
+  .app-head { display: flex; align-items: center; gap: 14px; margin: 16px 0 24px; }
+  .app-head img { width: 56px; height: 56px; border-radius: 12px; border: 1px solid var(--line); }
+  h1 { font-size: 1.6rem; margin: 0; }
+  .release { background: var(--card); border-radius: 18px; padding: 20px 24px; margin-bottom: 16px; }
+  .release h2 { font-size: 1.1rem; margin: 0; }
+  .date { color: var(--sub); font-size: 0.85rem; margin: 2px 0 10px; }
+  ul { padding-left: 1.4em; margin: 0; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="../">‹ インストールページへ戻る</a>
+  <div class="app-head">
+    <img src="icon-512.png" alt="">
+    <h1>レシート切り抜き の更新履歴</h1>
+  </div>
+
+  <div class="release">
+    <h2>バージョン 1.1（ビルド 2）</h2>
+    <div class="date">2026年10月30日</div>
+    <ul>
+      <li>横向きや逆さまに撮ったレシートも、正しい向きに回してから読み取るようにしました。保存する画像も正しい向きになります。</li>
+      <li>「2,860円」のように「円」が後ろに付く金額や、合計の行の末尾にある記号なしの金額も読み取れるようにしました。</li>
+      <li>読み取った後の画面で、レシート画像をピンチで拡大・縮小できるようにしました。ダブルタップで全体表示と拡大を切り替えられます。</li>
+      <li>iPad の横向きでも、レシート全体が画面に収まるようにしました。</li>
+      <li>画面上部のタイトルとボタンまわりの余白を詰めました。</li>
+    </ul>
+  </div>
+
+  <div class="release">
+    <h2>バージョン 1.0（ビルド 1）</h2>
+    <div class="date">2026年10月30日</div>
+    <ul>
+      <li>最初の公開版です。</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>
